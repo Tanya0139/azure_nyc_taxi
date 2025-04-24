@@ -26,7 +26,7 @@ This project demonstrates a scalable data pipeline for transportation analytics.
 
 ```mermaid
 graph TD
-  Source[NYC Taxi Dataset (CSV/Parquet)] --> ADF[Azure Data Factory]
+  Source["NYC Taxi Dataset (CSV/Parquet)"] --> ADF[Azure Data Factory]
   ADF --> Bronze[Bronze Layer - Raw Data]
   Bronze --> Silver[Silver Layer - Cleaned Data]
   Silver --> Gold[Gold Layer - Aggregated Data]
