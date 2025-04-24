@@ -24,8 +24,13 @@ This project demonstrates a scalable data pipeline for transportation analytics.
 
 ## 🏗️ Architecture
 
-```mermaid 
-graph TD Source[NYC Taxi Dataset (CSV/Parquet)] --> ADF[Azure Data Factory] ADF --> Bronze[Bronze Layer - Raw Data] Bronze --> Silver[Silver Layer - Cleaned Data] Silver --> Gold[Gold Layer - Aggregated Data] Gold --> PowerBI[Power BI Dashboard] 
+```mermaid
+graph TD
+  Source[NYC Taxi Dataset (CSV/Parquet)] --> ADF[Azure Data Factory]
+  ADF --> Bronze[Bronze Layer - Raw Data]
+  Bronze --> Silver[Silver Layer - Cleaned Data]
+  Silver --> Gold[Gold Layer - Aggregated Data]
+  Gold --> PowerBI[Power BI Dashboard]
 ```
 
 ---
